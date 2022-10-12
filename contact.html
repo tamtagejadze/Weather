@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav class="nav_menu">
+            <ul>
+                <li class="menu_li">
+                    <a class="menu_a" href="index.html">Home</a>
+                </li>
+                <li class="menu_li">
+                    <a class="menu_a" href="second.html">Weather and Climate</a>
+                </li>
+                <li class="menu_li">
+                    <a class="menu_a" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="line"></div>
+    </header>
+    <form class="container" id="registration" action="text.php" method="POST">
+        <h1>Contact Us</h1>
+        <div class="main_img">
+            <img class="avatar" src="image/avatar.jpg" alt="">
+        </div>
+        <div class="name-div">
+           <div class="one_div">
+                <input class="name" type="text" name="firstname" placeholder="First Name">
+                <div id="error_firstname" class="error"></div>
+           </div>
+            <div class="one_div">
+                <input class="name" type="text" name="lastname" placeholder="Last Name">
+                <div id="error_lastname" class="error"></div>
+            </div>
+        </div>
+        <div class="div-border">
+            <input class="input-txt" type="username" name="username" placeholder="Username">
+            <div id="error_username" class="error"></div>
+        </div>
+        <div class="div-border">
+            <input class="input-txt" type="email" name="email" placeholder="Email">
+            <div id="error_email" class="error"></div>
+        </div>
+        <div class="div-border-text">
+            <textarea class="text" name="textarea" placeholder="Enter Message" rows="5"></textarea>
+            <div id="error_textarea" class="error"></div>
+        </div>
+        <div> 
+            <label for="">
+                <input type="checkbox" name="agree">
+                <span>I agree to the terms and conditions</span>
+            </label>
+            <div id="error_agree" class="error"></div>
+        </div>
+        <div class="registration">
+            <button class="btn" id="btn-submit" type="submit" onclick="checkSubmit()">Submit</button>
+        </div>
+    </form>
+    <script src="contact.js"></script>
+
+    
+</body>
+</html>

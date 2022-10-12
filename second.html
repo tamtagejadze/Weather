@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/second.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <title>Climate</title>
+</head>
+<body>
+    <header>
+        <nav class="nav_menu">
+            <ul>
+                <li class="menu_li">
+                    <a class="menu_a" href="index.html">Home</a>
+                </li>
+                <li class="menu_li">
+                    <a class="menu_a" href="second.html">Weather and Climate</a>
+                </li>
+                <li class="menu_li">
+                    <a class="menu_a" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="line"></div>
+    </header>
+    <div class="container-second">
+        <h1>Global average temperatures</h1>
+        <div class="previous">
+            <button id="left">
+                <img class ="left" src="image/left.svg" alt="left" onclick="plusSlides(-1)">
+            </button>
+        </div>
+        <div class="next">
+            <button id="right">
+                <img class ="right" src="image/right.svg" alt="right" onclick="plusSlides(+1)">
+            </button>
+        </div> 
+
+        <div class="content-photo">
+            <h3>January</h3>
+            <img class="photo" src="image/january.jpg" alt="" onclick="currentSlide(1)">
+        </div>
+        <div class="content-photo">
+            <h3>July</h3>
+            <img class="photo" src="image/july.jpg" alt="" onclick="currentSlide(2)">
+        </div>
+
+    </div>
+    <div class="cold_hot">
+        <h2>The coldest places</h2>
+        <div class="cold">            
+            <div id="eureka">
+                <h4>Eureka, Canada</h4>
+                <img id="eureka_img" src="image/eureka.jpg" alt="eureka">
+                <p id="eureka_p">Temperature in winter:</p>
+                <h4 id="eureka_h">-40 °C</h4>
+            </div>
+            <div id="denali">
+                <h4>Denali, USA</h4>
+                <img id="denali_img" src="image/denali-winter.jpeg" alt="denali">
+                <p id="denali_p">Temperature in winter:</p>
+                <h4 id="denali_h">-40 °C</h4>
+            </div>
+            <div id="ulaanbaatar">
+                <h4>Ulaanbaatar, Mongolia</h4>
+                <img id="ulaanbaatar_img" src="image/ulaanbaatar.jpg" alt="ulaanbaatar">
+                <p id="ulaanbaatar_p">Temperature in winter:</p>
+                <h4 id="ulaanbaatar_h">-16 °C</h4>
+            </div>
+        </div>
+        <h2>The hottest places</h2>
+        <div class="hot">
+            <div id="azizia">
+                <h4>El Azizia, Libya</h4>
+                <img id="azizia_img" src="image/azizia.jpg" alt="El Azizia">
+                <p id="azizia_p">Temperature in summer:</p>
+                <h4 id="azizia_h">57,8 °C</h4>
+            </div>
+            <div id="dallol">
+                <h4>Dallol, Ethiopia</h4>
+                <img id="dallol_img" src="image/dallol.jpg" alt="">
+                <p id="dallol_p">Temperature in summer:</p>
+                <h4 id="dallol_h">43,2 °C</h4>
+            </div>
+            <div id="deathValley">
+                <h4>Death Valley, USA</h4>
+                <img id="deathValley_img" src="image/death Valley.jpg" alt="Death Valley">
+                <p id="deathValley_p">Temperature in summer:</p>
+                <h4 id="deathValley_h">56,7 °C</h4>
+            </div>
+        </div>
+    </div>
+    <div class="climate-table">
+        <h2>Climate differences around the world</h2>
+        <p>
+            There are differences in climate around the world because of differing amounts of radiation 
+            received from the Sun at different parts of the Earth at different times of the year. 
+            More heat from the Sun is received near the equator than near the north and south poles 
+            where the angle of the Sun's rays is lower. This is why tropical climates differ so much from polar climates.
+        </p>
+        <p>
+            Types of climate found at different locations around the Earth can be grouped into zones or 
+            regions to identify the particular weather features experienced. 
+            The main types of climate are as outlined in the Table below:
+        </p>
+        <table>
+            <tbody>
+                <tr>
+                    <th><h4>Climate Pattern</h4></th>
+                    <th><h4>Characteristics</h4></th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/Desert_climate" target="_blank">
+                            <span>Desert</span>
+                            <br>
+                            <img src="image/desert.jpg" alt="desert">
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Low rainfall, little or no vegetation due to lack of water. 
+                        Cloudless skies associated with anticyclones. 
+                        High daytime temps. of 40ºC are common.
+                        </p>
+                        <br>
+                        <p>
+                            Examples: Saharan Desert, Arabian Desert.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/Tropical_climate" target="_blank">
+                            <span>Tropical</span>
+                            <br>
+                            <img src="image/tropical.jpg" alt="tropical">
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Located around the equator. Hot, humid weather (daytime max. temp 30-35ºC). 
+                            Convection produces daily rainstorms. Little seasonal difference. 
+                            Further away from the equator a wet season and a dry season occur.
+                        </p>
+                        <br>
+                        <p>
+                            Examples: Amazon Basin, Brazil; the Congo Basin, W.Africa and Indonesia.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/Tropical_savanna_climate" target="_blank">
+                            <span>Savannah</span>
+                            <br>
+                            <img src="image/savannah.jpg" alt="savannah">
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Located between the wet equator belt and sub tropical belt. 
+                            Savannahs have one short rainy season, rest of year is dry. 
+                            Vegetation is mostly scrub and grassland.
+                        </p>
+                        <br>
+                        <p>
+                            Examples: Sahel in N. Africa, large parts of India, parts of N. Australia.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/Temperate_climate" target="_blank">
+                            <span>Temperate</span>
+                            <br>
+                            <img src="image/temperate.jpg" alt="temperate">
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Temperate climates are maritime or continental. 
+                            Maritime climates are strongly affected by the oceans with a fairly steady temperature across the seasons, 
+                            whilst continental climates are more inland with warmer summers and colder winters.
+                        </p>
+                        <br>
+                        <p>
+                            Examples: UK (maritime), central Europe (continental).
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/Mediterranean_climate" target="_blank">
+                            <span>Mediterranean</span>
+                            <br>
+                            <img src="image/mediterranean.jpg" alt="mediterranean">
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Mid latitude. Hot, dry summers and mild winter rain.
+                        </p>
+                        <br>
+                        <p>
+                            Examples: Regions around the Mediterranean, S Africa, South East Australia
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/Polar_climate" target="_blank">
+                            <span>Polar</span>
+                            <br>
+                            <img src="image/polar.jpg" alt="pola">
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Covered by snow and ice throughout the year. 
+                            Sun is never high enough in the sky to cause widespread melting. 
+                            Temperatures usually below freezing.
+                        </p>
+                        <br>
+                        <p>
+                            Examples: Greenland, northern Siberia, Arctic (north pole); Antarctic (south pole).
+                        </p>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+
+        // slide
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);}
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);}
+
+
+        function showSlides(n) {
+            var slides = document.getElementsByClassName("content-photo"); 
+            var arrows = document.getElementsByClassName("photo");
+            if (n > slides.length) {                   
+                slideIndex = 1;
+                }
+            if (n < 1) { 
+                slideIndex = slides.length;
+                }
+
+            for (var i = 0; i < slides.length; i++) { 
+                slides[i].style.display = "none";
+            }
+            
+            slides[slideIndex-1].style.display = "block"; 
+        }
+
+        // change coldest and hottest content
+        var eureka = document.getElementById('eureka');
+        var eurekaImg = document.getElementById('eureka_img');
+        var eurekaP = document.getElementById('eureka_p');
+        var eurekaH = document.getElementById('eureka_h');
+        var denali = document.getElementById('denali');
+        var denaliImg = document.getElementById('denali_img');
+        var denaliP = document.getElementById('denali_p');
+        var denaliH = document.getElementById('denali_h');
+        var ulaanbaatar = document.getElementById('ulaanbaatar');
+        var ulaanbaatarImg = document.getElementById('ulaanbaatar_img');
+        var ulaanbaatarP = document.getElementById('ulaanbaatar_h')
+        var ulaanbaatarH = document.getElementById('ulaanbaatar_h')
+        var azizia = document.getElementById('azizia');
+        var aziziaImg = document.getElementById('azizia_img');
+        var aziziaP = document.getElementById('azizia_p');
+        var aziziaH = document.getElementById('azizia_h');
+        var dallol = document.getElementById('dallol');
+        var dallolImg = document.getElementById('dallol_img');
+        var dallolP = document.getElementById('dallol_p');
+        var dallolH = document.getElementById('dallol_h');
+        var deathValley = document.getElementById('deathValley');
+        var deathValleyImg = document.getElementById('deathValley_img');
+        var deathValleyP = document.getElementById('deathValley_p');
+        var deathValleyH = document.getElementById('deathValley_h');
+        eureka.addEventListener('mouseover', changeOne);
+        eureka.addEventListener('mouseout', resetOne)
+        denali.addEventListener('mouseover', changeTwo);
+        denali.addEventListener('mouseout', resetTwo)
+        ulaanbaatar.addEventListener('mouseover', changeThree);
+        ulaanbaatar.addEventListener('mouseout', resetThree);
+        azizia.addEventListener('mouseover', changeFour);
+        azizia.addEventListener('mouseout', resetFour);
+        dallol.addEventListener('mouseover', changeFive);
+        dallol.addEventListener('mouseout', resetFive);
+        deathValley.addEventListener('mouseover', changeSix);
+        deathValley.addEventListener('mouseout', resetSix);
+
+
+        function changeOne() {
+            eurekaImg.src = 'image/eureka-summer.jpg';
+            eurekaP.innerHTML = 'Temperature in summer:'
+            eurekaH.innerHTML = '9.2 °C'
+        }
+        function resetOne() {
+            eurekaImg.src = 'image/eureka.jpg';
+            eurekaP.innerHTML = 'Temperature in winter:'
+            eurekaH.innerHTML = '-40 °C'
+        }
+        function changeTwo() {
+            denaliImg.src = 'image/denali-summer.jpg';
+            denaliP.innerHTML = 'Temperature in summer:'
+            denaliH.innerHTML = "18 °C"
+        }
+        function resetTwo() {
+            denaliImg.src = 'image/denali-winter.jpeg';
+            denaliP.innerHTML = 'Temperature in winter:'
+            denaliH.innerHTML = "-40 °C"
+        }
+        function changeThree() {
+            ulaanbaatarImg.src = 'image/ulaanbaatar-summer.jpg';
+            ulaanbaatarP.innerHTML = 'Temperature in summer:'
+            ulaanbaatarH.innerHTML = '23 °C'
+        }
+        function resetThree() {
+            ulaanbaatarImg.src = 'image/ulaanbaatar.jpg';
+            ulaanbaatarP.innerHTML = 'Temperature in winter:'
+            ulaanbaatarH.innerHTML = '-16 °C'
+        }
+
+        function changeFour() {
+            aziziaImg.src = 'image/azizia-winter.jpg';
+            aziziaP.innerHTML = 'Temperature in winter:'
+            aziziaH.innerHTML = '17 °C'
+        }
+        function resetFour() {
+            aziziaImg.src = 'image/azizia.jpg';
+            aziziaP.innerHTML = 'Temperature in summer:'
+            aziziaH.innerHTML = '57,8 °C'
+        }
+        function changeFive() {
+            dallolImg.src = 'image/dallol-winter.jpg';
+            dallolP.innerHTML = 'Temperature in winter:'
+            dallolH.innerHTML = "22 °C"
+        }
+        function resetFive() {
+            dallolImg.src = 'image/dallol.jpg';
+            dallolP.innerHTML = 'Temperature in summer:'
+            dallolH.innerHTML = "43,2 °C"
+        }
+        function changeSix() {
+            deathValleyImg.src = 'image/death-valley-winter-road.jpg';
+            deathValleyP.innerHTML = 'Temperature in winter:'
+            deathValleyH.innerHTML = '19 °C'
+        }
+        function resetSix() {
+            deathValleyImg.src = 'image/death Valley.jpg';
+            deathValleyP.innerHTML = 'Temperature in summer:'
+            deathValleyH.innerHTML = '56,7 °C'
+        }
+    </script>
+</body>
+</html>

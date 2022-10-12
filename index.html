@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Weather</title>
+</head>
+<body>     
+
+<header>
+    <div class="header-container">
+        <div class="left-side">
+            <div>
+                <img class="logo" src="image/logo.png" alt="">
+            </div>
+           <div>
+            <h2 class="main-title">World Weather Information</h2>
+           </div>
+        </div>
+        <div class="right-side">
+            <button class="menu-btn" onclick="dropDown()">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div class="dropdown-menu">
+                <div class="dropdown-tilte">
+                    <button class="removeDropdown" onclick="remove()">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                </div>
+                <ul class="dropdown-menu-ul">
+                    <li class="dropdown-menu-li">
+                        <a class="dropdown-menu-a" href="index.html">Home</a>
+                    </li>
+                    <li class="dropdown-menu-li">
+                        <a class="dropdown-menu-a" href="second.html" target="_blank">Weather and Climate</a>
+                    </li>
+                    <li class="dropdown-menu-li">
+                        <a class="dropdown-menu-a" href="contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+ 
+<div class="container">
+    <img class="bg" src="image/header-img.jpg" alt="">
+    <div class="input-div">
+        <input type="text" placeholder="Search Country" class="inputTxt">
+        <button class="btn">
+            <span class="material-symbols-outlined">search</span>
+        </button>
+    </div>
+    <div>
+        <div class="card-container">
+            <div class="card">
+                <h1 class="name" id="name"></h1>
+                <p class="country"></p>
+                <p class="temp"></p>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div class="content">
+    <div class="weather-facts">
+        <div>
+            <video class="video" src="image/video.mp4" controls></video>
+        </div>
+        <div class="fact">
+            <h2>Top 7 Facts about weather!</h2>
+            <ol>
+                <li>There are about 2,000 thunderstorms happening right now!</li>
+                <li>The lowest temperature ever recorded is −89.2 °C</li>
+                <li>The highest temperature ever recorded 58 °C</li>
+                <li>Hailstones don’t have a size limit</li>
+                <li>For each minute of the day, 1 billion tonnes of rain falls on the Earth.</li>
+                <li>Space has weather too</li>
+                <li>The wind doesn't make a sound until it blows against an object</li>
+            </ol>
+        </div>
+    </div>
+    <div  class="climate-facts">
+        <img class="map" src="image/tempmap2.png" alt="map-img">
+        <div> 
+            <h2>Continental climate</h2>
+            <p class="infoText">
+                <strong>Continental climates</strong> often have a significant annual variation in temperature (hot summers and cold winters). 
+                They tend to occur in the middle latitudes (40 to 55 north), within large landmasses where 
+                <a href="https://en.wikipedia.org/wiki/Prevailing_winds" target="_blank">prevailing winds</a> 
+                blow overland bringing some precipitation, and temperatures are not moderated by 
+                <a href="https://en.wikipedia.org/wiki/Body_of_water" target="_blank">bodies of water</a> 
+                such as oceans or seas unlike <a class="climateFacts-a" href="https://en.wikipedia.org/wiki/Temperate_climate" target="_blank">temperate climates</a>. 
+                Continental climates occur mostly in the Northern Hemisphere, which has the kind of large landmasses on temperate latitudes 
+                required for this type of climate to develop. Most of northern and northeastern 
+                <a href="https://en.wikipedia.org/wiki/China" target="_blank">China</a>, eastern and southeastern 
+                <a class="climateFacts-a" href="https://en.wikipedia.org/wiki/Europe" target="_blank">Europe</a>, Western and north western 
+                <a href="https://en.wikipedia.org/wiki/Iran" target="_blank">Iran</a>, central and southeastern 
+                <a class="climateFacts-a" href="https://en.wikipedia.org/wiki/Canada" target="_blank">Canada</a>, and the central and northeastern 
+                <a href="https://en.wikipedia.org/wiki/United_States" target="_blank">United States</a> have this type of climate.
+                <a href="https://en.wikipedia.org/wiki/Continental_climate#cite_note-cc-1" target="_blank"><sup>[1]</sup></a> 
+                <strong>Continentality</strong> is a measure of the degree to which a region experiences this type of climate.
+                <a class="climateFacts-a" href="https://en.wikipedia.org/wiki/Continental_climate#cite_note-cc-1" target="_blank"><sup>[1]</sup></a>
+                In continental climates, <a href="https://en.wikipedia.org/wiki/Precipitation" target="_blank">precipitation</a> tends to be moderate in amount, 
+                concentrated mostly in the warmer months. Only a few areas—in the mountains of the <a href="https://en.wikipedia.org/wiki/Pacific_Northwest" target="_blank">Pacific Northwest</a> 
+                of North America and in <a href="https://en.wikipedia.org/wiki/Iraq" target="_blank">Iran</a>, northern <a href="https://en.wikipedia.org/wiki/Iraq" target="_blank">Iraq</a>, 
+                adjacent <a href="https://en.wikipedia.org/wiki/Turkey" target="_blank">Turkey</a>, <a href="https://en.wikipedia.org/wiki/Afghanistan" target="_blank">Afghanistan</a>, 
+                <a href="https://en.wikipedia.org/wiki/Pakistan" target="_blank">Pakistan</a>, and <a href="https://en.wikipedia.org/wiki/Central_Asia" target="_blank">Central Asia</a>—show a winter maximum in precipitation. 
+                A portion of the annual precipitation falls as snowfall, and snow often remains on the ground for more than a month. Summers in continental climates can feature thunderstorms and frequent hot temperatures; 
+                however, summer weather is somewhat more stable than winter weather.
+            </p>
+        </div>
+        <div>
+            <img class="koppenGeigerMap" src="image/Koppen-Geiger_Map_D_present.svg.png" alt="climate-photo">
+            <div>
+                <h2>Köppen climate classification</h2>
+                <p class="climateClassification">
+                    Most such areas fit <a href="https://en.wikipedia.org/wiki/K%C3%B6ppen_climate_classification" target="_blank">Köppen climate classifications</a> 
+                    of <strong>Dfa, Dwa</strong> having hot summers (mean temperature of the warmest month above 22 °C; "w" indicating very dry winters 
+                    characteristic especially of China) or <strong>Dfb</strong> or <strong>Dwb</strong> with warm summers (mean temperature below 22 °C).
+                    <a href="https://en.wikipedia.org/wiki/Continental_climate#cite_note-2" target="_blank"><sup>[2]</sup></a> 
+                    Dry summer continental climates (<strong>Dsa</strong> and <strong>Dsb</strong>) exist in high altitude areas near 
+                    <a href="https://en.wikipedia.org/wiki/Mediterranean_climate" target="_blank">Mediterranean climates</a>. 
+                    In some cases, the <a href="https://en.wikipedia.org/wiki/Semi-arid_climate" target="_blank">semi-arid</a> 
+                    climate classification of <strong>BSk</strong> and the <a href="https://en.wikipedia.org/wiki/Desert" target="_blank">desert</a> 
+                    climate of <strong>BWk</strong> can also be considered to be continental as long as it has cold winters, 
+                    though it isn't by the Köppen classification. The definition of this climate regarding temperature is as follows: the mean temperature of the 
+                    coldest month must be below 0 °C (32.0 °F) and there must be at least four months whose mean temperatures 
+                    are at or above 10 °C (50 °F).<a href="https://en.wikipedia.org/wiki/Continental_climate#cite_note-3" target="_blank"><sup>[3]</sup></a>
+                </p>
+            </div>            
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-div">
+        <p class="footer-p">© 2022 Copyright - All Rights Reserved</p>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
